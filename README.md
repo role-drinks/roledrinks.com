@@ -1,1 +1,2 @@
-# role-drinks
+# role-drinks.com
+Website for gloabl role=drinks meet-ups.
