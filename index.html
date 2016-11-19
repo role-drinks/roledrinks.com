@@ -1,138 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-gb">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>role=drinks meet-ups</title>
-    <link rel="stylesheet" href="core.css">
-</head>
-<body>
+    <title>Accessibility Meetup: role=drinks</title>
+    <link rel="stylesheet" href="drinks.css">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@roledrinks">
+    <meta name="twitter:creator" content="@roledrinks">
+    <meta name="twitter:title" content="role=drinks in November 12th">
+    <meta name="twitter:description" content="What on Earth is a role=drinks? It’s an accessibility meet-up with lightning talks and more than enough time to grab a drink.">
+    <meta name="twitter:image" content="http://roledrinks.com/images/twitter-card.png">
+    <meta name="twitter:image:alt" content="role=drinks accessibility meetup 🍻">
+  </head>
+  <body>
+    <a href="#main">Skip to content</a>
+
     <header>
-        <p>role=drinks</p>
+      <div class="✨">
+        <div>
+          <h1>
+            <svg viewBox="0 0 120 120" class="♿️" aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#role-drinks"></use>
+            </svg>
+            role=drinks
+          </h1>
+          <p>We make <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html#introduction-fourprincs-head">POUR</a> choices 🍻</p>
+          <p>
+            What on Earth is a role=drinks?
+            It’s an accessibility meetup!
+            The event features lightning talks by accessibility specialist, time to talk to the speakers and fellow attendees, and more than enough time to grab a drink.
+          </p>
+        </div>
+        <svg viewBox="0 0 120 120" class="♿️" aria-label="role=drinks logo">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#role-drinks"></use>
+        </svg>
+      </div>
     </header>
+
+    <nav aria-label="Page">
+      <ul>
+        <li>
+          <a href="#drinking-plans">
+            <span aria-hidden="true">🍻</span>
+            Drinking Plans
+          </a>
+        </li>
+        <li>
+          <a href="#where-were-we">
+            <span aria-hidden="true">🤔</span>
+            Vague Memories
+          </a>
+        </li>
+        <!-- <li>
+          <a href="#children">
+            <span aria-hidden="true">💖</span>
+            Rules
+          </a>
+        </li> -->
+        <li>
+          <a href="#thank-you">
+            <span aria-hidden="true">💰</span>
+            Sponsors
+          </a>
+        </li>
+        <li>
+          <a href="#run-the-world">
+            <span aria-hidden="true">🌍</span>
+            Run one!
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <main id="main">
-        <h1>#a11y meet-up</h1>
+      <section id="drinking-plans">
+        <div class="✨">
+          <h2>Drinking Plans</h2>
 
-		<p>
-			Interested in accessibility?
-			Want to talk to other interested people?
-			Visit one of the role=drinks meetups :)
-		</p>
+          <p>
+            We've had a couple of drinks, err, meetups and want to drink with… damnit, meet more people!
+            If you're interested in attending or setting up a meetup, please <a href="https://twitter.com/roledrinks">tell us on Twitter</a> or <a href="mailto:hello@roledrinks.com">send us an e-mail</a>.
+          </p>
 
+          <ol class="👥 🏙">
+            <li>
+              <a href="">
+                <img src="images/cities/Edinburgh.jpg" alt="">
+                <div>
+                  <span>Edinburgh, UK</span>
+                  <i><time datetime="2017">2017</time></i>
+                </div>
+              </a>
+              <p>Run by the fabulous <a href="https://twitter.com/peterheery">Peter Heery</a> 💁‍♂️</p>
+            </li>
 
-		<section>
-			<h2>Drinking plans</h2>
+            <li>
+              <a href="">
+                <img src="images/cities/Amsterdam.jpg" alt="">
+                <div>
+                  <span>Amsterdam, NL</span>
+                  <i><time datetime="2017">2017</time></i>
+                </div>
+              </a>
+              <p>We’re destined to return to Amsterdam somewhere in 2017.</p>
+            </li>
 
-			<p>
-				We've had a couple of drinks, err, meetups and want to drink with… damnit, meet more people!
-				If you're interested in attending or setting up a meetup, please <a href="https://twitter.com/MichielBijl">tell Michiel on Twitter</a> or <a href="mailto:roledrinks@agosto.nl">send us an e-mail</a>.
-			</p>
+            <li>
+              <a href="">
+                <img src="images/cities/Berlin.jpg" alt="">
+                <div>
+                  <span>Berlin, DE</span>
+                  <i><time datetime="2017">2017</time></i>
+                </div>
+              </a>
+              <p>Thanks to the marvelous <a href="https://twitter.com/lhtdesignde">Stefanie Laharnar</a> 🙌🏼‍</p>
+            </li>
 
-            <div class="overflow">
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Location</th>
-                            <th scope="col">Date</th>
-							<th scope="col">URL</th>
-                            <th scope="col">Organiser</th>
-                            <th scope="col">Talk</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-						<tr>
-							<th scope="row">Brighton, UK</th>
-							<td>12th of November 2016</td>
-							<td><a href="http://roledrinks.uk">Website</a></td>
-							<td>Michiel and Henny</td>
-							<td>2 talks</td>
-						</tr>
-						<tr>
-							<th scope="row">Edinburgh, UK</th>
-							<td>2016</td>
-							<td></td>
-							<td><a href="https://twitter.com/peterheery">Peter Heery</a></td>
-							<td>TBA</td>
-						</tr>
-						<tr>
-							<th scope="row">San Diego, USA</th>
-							<td>2017</td>
-							<td></td>
-							<td>TBA</td>
-							<td>TBA</td>
-						</tr>
-						<!--
-						<tr>
-							<th scope="row"></th>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr> -->
-					</tbody>
-				</table>
-			</div>
-		</section>
+            <li>
+              <a href="">
+                <img src="images/cities/Toronto.jpg" alt="">
+                <div>
+                  <span>Toronto, CA</span>
+                  <i><time datetime="2017">2017</time></i>
+                </div>
+              </a>
+              <p>Rumour has it people like drinking in Toronto.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-		<section>
-			<h2>Vague memories</h2>
+      <section id="where-were-we">
+        <div class="✨">
+          <h2>Vague Memories</h2>
 
-			<p>A list of—what we think at least are—previous meet-ups:</p>
+          <p>A list of—what we think at least are—previous meet-ups:</p>
+          <ol class="👥 🏙">
+            <li>
+              <a href="">
+                <img src="images/cities/Amsterdam.jpg" alt="">
+                <div>
+                  <span>Amsterdam, NL</span>
+                  <i><time datetime="2016-10-08">8th of October 2016</time></i>
+                </div>
+              </a>
+              <p>With 6 amazing talks this was a bunch of fun!</p>
+            </li>
 
-            <div class="overflow">
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Location</th>
-                            <th scope="col">Date</th>
-                            <th scope="cole">Website</th>
-                            <th scope="col">Organiser</th>
-                            <th scope="col">Talk</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">Amsterdam, NL</th>
-                        <td>8th of October 2016</td>
-                        <td><a href="http://roledrinks.nl">Website</a></td>
-                        <td>Job, Eva, and Michiel</td>
-                        <td>6 talks</td>
-                      </tr>
-						<tr>
-							<th scope="row">Hamburg, DE</th>
-							<td>17th of August 2016</td>
-							<td><a href="http://roledrinks.de">Website</a></td>
-							<td><a href="https://twitter.com/lassediercks">Lasse Diercks</a></td>
-							<td>3 to 5 talks</td>
-						</tr>
-						<tr>
-							<th scope="row">Amsterdam, NL</th>
-							<td>18th of June 2016</td>
-							<td></td>
-							<td>Job, Eva, and Michiel</td>
-							<td>We had 7(!) talks varying from space adventures to vacation selfies</td>
-						</tr>
-						<tr>
-							<th scope="row">Utrecht, NL</th>
-							<td>15th of April 2016</td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<th scope="row">Dieren, NL</th>
-							<td>19th of February 2016</td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</section>
+            <li>
+              <a href="">
+                <img src="images/cities/Hamburg.jpg" alt="">
+                <div>
+                  <span>Hamburg, DE</span>
+                  <i><time datetime="2016-08-17">17th of August 2016</time></i>
+                </div>
+              </a>
+              <p>This was the first role=drinks outside of the Netherlands. Thanks to the fantastic <a href="https://twitter.com/lassediercks">Lasse Diercks</a>.</p>
+            </li>
+
+            <li>
+              <a href="">
+                <img src="images/cities/Amsterdam.jpg" alt="">
+                <div>
+                  <span>Amsterdam</span>
+                  <i><time datetime="2016-06-18">18th of June 2016</time></i>
+                </div>
+              </a>
+              <p>First role=drinks to feature talks 😱</p>
+            </li>
+
+            <li>
+              <a href="">
+                <img src="images/cities/Utrecht.jpg" alt="">
+                <div>
+                  <span>Utrecht, NL</span>
+                  <i><time datetime="2016-04-15">15th of April 2016</time></i>
+                </div>
+              </a>
+              <p>Total bar tab was only €184.-</p>
+            </li>
+
+            <li>
+              <a href="">
+                <img src="images/cities/Dieren.jpg" alt="">
+                <div>
+                  <span>Dieren, NL</span>
+                  <i><time datetime="2016-02-19">19th of February 2016</time></i>
+                </div>
+              </a>
+              <p>First ever role=drinks 🎉</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- <section id="children">
+        <div class="✨">
+          <h2>Code of Conduct</h2>
+          <p>As Léonie says: <q>Play nice with the other children!</q> If you need more information on how to behave, please have a look at <a href="http://www.peace.ca/kindergarten.htm">these basic rules</a>.</p>
+          <p>Don't hesitate to contact us if something does happen! You can <a href="tel:+447480558828">call us at +44 7480 55 88 28</a>, <a href="https://twitter.com/roledrinks">tweet us at @roledrinks</a>, or <a href="mailto:hello@roledrinks.com">send us an e-mail</a>.
+        </div>
+      </section> -->
+
+      <section id="thank-you">
+        <div class="✨">
+          <h2>Who paid for all of this?</h2>
+          <p>We blackmailed some people into paying for your drink:</p>
+          <ul class="💰">
+            <li><a href="https://fronteers.nl"><img src="images/sponsors/fronteers.svg" alt="Fronteers"></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="run-the-world">
+        <div class="✨">
+          <h2>Run one of your own!</h2>
+          <p>Please <a href="https://twitter.com/MichielBijl">remind Michiel</a> to write this section.</p>
+        </div>
+      </section>
     </main>
 
-    <footer hidden>
-        <p>Sponsored by <a href=""><img src="" alt=""></a></p>
+    <footer>
+      <div class="✨">
+        <p>Built while under the influence of whisky. You can <a href="https://twitter.com/roledrinks">share a drink with us on Twitter</a>.</p>
+      </div>
     </footer>
-</body>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" preserveAspectRatio="xMidYMid meet" style="display: none">
+      <defs>
+        <g id="role-drinks" aria-labelledby="title" aria-describedby="desc" role="img">
+          <title id="title">role=drinks</title>
+          <desc id="desc">The universal design icon where the man is holding a bottle and a cocktail and some bubbles are coming from his head.</desc>
+          <path d="M120 58C119 26.6 93.4 1 62 0 27.3-1.1-1.1 27.3 0 62c1 31.4 26.6 57 58 58 34.7 1.1 63.1-27.3 62-62zm-7.2 5.4c-1.7 26.4-23 47.7-49.4 49.4C31.5 114.8 5 88.3 7 56.4 8.7 30 30 8.7 56.4 7c31.9-2 58.4 24.5 56.4 56.4z"/>
+          <path d="M57.6 15h-.7c-.1.4-.6.8-1.1.8-.4 0-.8-.2-1-.6-21.7 2.4-38.9 20.4-40 42.4-1.3 26.8 20.6 48.7 47.3 47.3 22.9-1.2 41.5-19.8 42.7-42.7 1.5-26.6-20.4-48.6-47.2-47.2zm2.4 2.3c.1 0 .3.1.3.3 0 .1-.1.3-.3.3s-.3-.1-.3-.3c0-.2.2-.3.3-.3zm-.5 2.4c.3 0 .6.3.6.6s-.3.6-.6.6-.6-.3-.6-.6.3-.6.6-.6zM56.7 17c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9zm-4.8 14.7c.4-3.8 3.5-6.8 7.2-7.2 5.2-.5 9.5 3.8 9 9-.4 3.8-3.5 6.8-7.3 7.2-5.1.5-9.4-3.8-8.9-9zm43.4 2.1c.3 0 .6.1.8.4l.3-.2.2.1-.3.3c.1.2.2.3.2.5s-.1.4-.2.6l.4.2c.1.1.2.2.1.3-1.4 1.1-8.4 6.2-8.4 6.2 0 .1-.1.1-.1.2 1.4 0 2.1.6 2.6 1.5.4.9.3 3.5-1.9 4.1-.9.2-1.8.4-2.6.6-.1.3-.1.5-.2.7-.1.2 0 .4.2.5.7.5 2.5 1.7 2.3 2.5-.3 1.1-2.3 1.2-4.6.5-1.7-.5-3.5-1.9-3.4-3-3.2.7-6.3 1.3-9.6 2.2-.9.3-2.5 1.6-2.6 2.6-1.6 13 2.3 27.5 4.7 34.6l.6 1.4c.9 2.2.8 4.7-1.4 5.6-.5.2-1 .3-1.5.3-1.7 0-2.7-1-3.4-2.8l-.5-1.3c-1.8-4.6-2.9-9.1-5.3-16.6-.2-.5-.7-1.7-1.2-1.7h-1c-.5 0-1.3 2-1.4 2.5-2.5 7.6-2.9 11.2-4.8 15.8l-.5 1.4c-.7 1.7-1.7 2.8-3.4 2.8-.5 0-1.1-.1-1.5-.3-2.2-.9-2.5-3.3-1.6-5.6l.6-1.4c2.7-6.9 6-21.9 4.9-34.4-.1-1-1.6-2.4-2.6-2.7-3.8-1.1-7.5-1.8-11.4-2.6l1.1 3.1c.1.3-.1.7-.4.8l-2.8.9-2.8 1.1c-.3.1-.7 0-.8-.4l-4.5-12c-.2-.6-.2-1.2.1-1.7l.4-.8c.2-.4.3-.8.2-1.2 0 0-1.2-4.4-1.5-5.9 0-.1-.3 0-.3-.2-.1-.3-.1-.8-.2-1.1-.2-.2-.3-.2-.3-.2-.1-.1-.2 0-.2-.4l1.3-.5 1.3-.5c.3.3.2.3.1.4 0 .1-.1.1-.1.2.1.3.5.7.6 1 .1.1-.2.2-.1.3.6 1.3 2.6 5.5 2.6 5.5.2.4.5.7.9.8l.8.4c.5.2 1 .7 1.2 1.3l.8 2.3c9.2 1.1 16.8 1.3 24.8 1.3 8.5 0 17-.2 26.5-1.5.1-.4.2-.7.2-.9 0 0-2.2-8.5-2.5-10.2 0-.1.1-.3.3-.2l9.7 3.5c.1-.5.5-1 1.1-1z"/>
+        </g>
+      </defs>
+    </svg>
+
+    <script>
+      (function () {
+        var alert = document.getElementsByClassName('😭')[0];
+        setTimeout(function () {
+          //alert.setAttribute('role', 'alert');
+          alert.innerHTML = alert.innerHTML + ' ';
+        }, 1000);
+      })();
+    </script>
+  </body>
 </html>

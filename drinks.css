@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus,
+a:hover {
+  color: hsl(334, 100%, 45%);
+}
+
+a[href^="https://goo.gl"]::after,
+a[href^="http://www.caxtonarms"]::after {
+  content: "⎘";
+}
+
+/* Skip link */
+body > a[href="#main"] {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  transform: translateY(-150%);
+  transition: transform 0 2s;
+  padding: 0.5em 1em;
+  border: .2em solid #333;
+  border-radius: .3em;
+  color: hsl(217, 65%, 52%);
+  background: #fff;
+}
+
+body > a[href="#main"]:focus {
+  transform: translateY(0);
+  transition-delay: 0;
+  border-color: currentColor;
+  outline: none;
+}
+
+/* Header area */
+body > header {
+  padding: 2em 0 1em;
+}
+
+h1 {
+  margin: 0;
+  color: hsl(217, 65%, 57%);
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: calc(1.7em + 0.5vw);
+  font-weight: bold;
+  line-height: 1.7em;
+  text-align: center;
+}
+
+h1 + p {
+  margin: 0 0 1em;
+  color: hsl(274, 100%, 49%);
+  text-align: center;
+}
+
+.♿️ {
+  width: 3rem;
+  vertical-align: middle;
+  fill: hsl(217, 65%, 57%);
+}
+
+header :not(h1) > .♿️ {
+  display: none;
+}
+
+/* Menu */
+nav {
+  postion: sticky;
+  background: hsl(37, 86%, 59%);
+}
+
+nav ul {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 40em;
+  list-style: none;
+  text-align: center;
+  font-size: calc(.8em + 0.5vw);
+}
+
+nav li {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  width: 25%;
+
+}
+
+nav li + li {
+  border-left: .1em solid rgba(50, 50, 50, .2);
+}
+
+nav a {
+  display: block;
+  padding: 1em .5em;
+  width: 100%;
+  text-decoration: none;
+}
+
+nav a:focus,
+nav a:hover {
+  outline: none;
+  color: hsl(334, 100%, 43%);
+  background: rgba(255, 255, 255, 0.5);
+  background: hsl(37, 86%, 90%);
+}
+
+nav span {
+  display: block;
+}
+
+/* Main content */
+.✨ {
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 40em;
+}
+
+main > section {
+  padding: 2em 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+main > section :last-child {
+  margin-bottom: 0;
+}
+
+main section:nth-of-type(even) {
+  color: #fff;
+  background: hsl(217, 55%, 48%);
+}
+
+main section:nth-of-type(even) a {
+  color: inherit;
+}
+
+main section:nth-of-type(even) a:focus,
+main section:nth-of-type(even) a:hover {
+  border-radius: .1em;
+  color: hsl(334, 100%, 43%);
+  background: hsl(217, 55%, 96%);
+  box-shadow: 0 0 0 .2em hsl(217, 55%, 96%);
+}
+
+/* Attendees/Speaker list */
+.👥 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.👥 li {
+  margin-top: 1em;
+  padding-right: 2em;
+  width: 20em;
+  max-width: 100%;
+  min-width: 10em;
+}
+
+.👥.📢 li {
+  margin-top: 2em;
+}
+
+.👥 li > a {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+
+section .👥 li > a:focus, /* Cascade 💖 */
+section .👥 li > a:hover {
+  border-radius: .3em;
+  color: hsl(217, 55%, 48%);
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 0 .2em hsl(217, 55%, 78%);
+}
+
+.👥 a div {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+.👥 p {
+  margin-top: .5em;
+}
+
+.👥 a span {
+  display: block;
+  text-decoration: underline;
+}
+
+.👥 img {
+  width: 3em;
+  border: .1em solid #fff;
+  border-radius: .3em;
+  vertical-align: baseline;;
+}
+
+.👥.💯 li {
+  counter-increment: attendees;
+}
+
+.👥.💯 li::before {
+  content: counter(attendees);
+}
+
+/* Sponsors */
+.💰 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5em;
+  margin-top: 1em;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+}
+
+.💰 a {
+  display: inline-block;
+}
+
+.💰 li {
+  flex: 1 0 10em;
+  margin: 0.5em;
+  max-width: 15em;
+}
+
+.💰 img {
+  max-width: 100%;
+}
+
+.😭 {
+  margin: 2em auto;
+  padding: 1em 2em;
+  width: 80vw;
+  max-width: 40em;
+  border: .1em solid hsl(10, 100%, 45%);
+  border-radius: .3em;
+  color: hsl(10, 100%, 25%);
+  background: hsl(10, 100%, 90%);
+}
