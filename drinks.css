@@ -31,6 +31,15 @@ a[href^="http://www.caxtonarms"]::after {
   content: "⎘";
 }
 
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+img + img {
+  margin-top: 1em;
+}
+
 /* Skip link */
 body > a[href="#main"] {
   position: absolute;
@@ -257,13 +266,19 @@ section .👥 li > a:hover {
   max-width: 100%;
 }
 
-.😭 {
+.ℹ️ {
   margin: 2em auto;
   padding: 1em 2em;
   width: 80vw;
   max-width: 40em;
-  border: .1em solid hsl(10, 100%, 45%);
+  border: .1em solid hsl(217, 100%, 45%);
   border-radius: .3em;
+  color: hsl(217, 100%, 25%);
+  background: hsl(217, 100%, 90%);
+}
+
+.ℹ️.😭 {
+  border-color: hsl(10, 100%, 45%);
   color: hsl(10, 100%, 25%);
   background: hsl(10, 100%, 90%);
 }
