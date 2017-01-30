@@ -264,6 +264,7 @@ section .👥 li > a:hover {
 
 .💰 img {
   max-width: 100%;
+  max-height: 90px;
 }
 
 .ℹ️ {
