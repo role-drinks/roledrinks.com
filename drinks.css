@@ -267,6 +267,11 @@ section .👥 li > a:hover {
   max-height: 90px;
 }
 
+/* override earlier wide-range selector */
+.💰 li:last-child {
+  margin: 0.5em;
+}
+
 .ℹ️ {
   margin: 2em auto;
   padding: 1em 2em;
