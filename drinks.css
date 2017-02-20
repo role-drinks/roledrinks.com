@@ -196,7 +196,8 @@ main section:nth-of-type(even) a:hover {
   margin-top: 2em;
 }
 
-.👥 li > a {
+.👥 li > a,
+.👥 li > div {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
@@ -212,7 +213,9 @@ section .👥 li > a:hover {
   box-shadow: 0 0 0 .2em hsl(217, 55%, 78%);
 }
 
-.👥 a div {
+.👥 a div,
+.👥 div div
+ {
   display: inline-block;
   padding: 0 1em;
 }
@@ -221,7 +224,8 @@ section .👥 li > a:hover {
   margin-top: .5em;
 }
 
-.👥 a span {
+.👥 a span,
+.👥 div span {
   display: block;
   text-decoration: underline;
 }
