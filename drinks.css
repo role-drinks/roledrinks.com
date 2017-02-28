@@ -291,6 +291,10 @@ section .👥 li > a:hover {
   background: hsl(217, 100%, 90%);
 }
 
+.ℹ️ h2 {
+  text-align: center;
+}
+
 .ℹ️.😭 {
   border-color: hsl(10, 100%, 45%);
   color: hsl(10, 100%, 25%);
