@@ -15,6 +15,7 @@ body {
   margin: 0;
   font-family: "Lucida Grande", sans-serif;
   line-height: 1.5;
+  counter-reset: attendees;
 }
 
 a {
@@ -190,6 +191,15 @@ main section:nth-of-type(even) a[href]:hover {
   width: 20em;
   max-width: 100%;
   min-width: 10em;
+}
+
+.👥:not(.📢) li {
+  counter-increment: attendees;
+}
+
+.👥:not(.📢)::after {
+  display: none;
+  content: counter(attendees) " attendees";
 }
 
 .👥.📢 li {
