@@ -80,6 +80,17 @@
 
           <ol class="👥 🏙">
             <li>
+              <a href="/in/amsterdam">
+                <img src="images/cities/Amsterdam.jpg" alt="">
+                <div>
+                  <span>Amsterdam, NL</span>
+                  <i><time datetime="2017-06-17">17th of June 2017</time></i>
+                </div>
+              </a>
+              <p>We’ll be back in Amsterdam right after the fabulous <a href="https://cssday.nl">CSS Day conference</a>.</p>
+            </li>
+
+            <li>
               <a href="/in/edinburgh">
                 <img src="images/cities/Edinburgh.jpg" alt="">
                 <div>
@@ -99,17 +110,6 @@
                 </div>
               </a>
               <p>We’ve heard Bristol has quite a few accessibility engineers in it.</p>
-            </li>
-
-            <li>
-              <a href="/in/amsterdam">
-                <img src="images/cities/Amsterdam.jpg" alt="">
-                <div>
-                  <span>Amsterdam, NL</span>
-                  <i><time datetime="2017-06-17">17th of June 2017</time></i>
-                </div>
-              </a>
-              <p>We’ll be back in Amsterdam right after the fabulous <a href="https://cssday.nl">CSS Day conference</a>.</p>
             </li>
 
             <!-- <li>
@@ -162,7 +162,7 @@
                   <i><time datetime="2016-11-12">12th of November 2016</time></i>
                 </div>
               </a>
-              <p>First time we had to cancel 😭</p>
+              <p>First time we had to cancel <span role="img" aria-label="Crying face">😭</span></p>
             </li>
 
             <li>
@@ -195,7 +195,7 @@
                   <i><time datetime="2016-06-18">18th of June 2016</time></i>
                 </div>
               </a>
-              <p>First role=drinks to feature talks 😱</p>
+              <p>First role=drinks to feature talks <span role="img" aria-label="Screaming face">😱</span></p>
             </li>
 
             <li>
@@ -217,7 +217,7 @@
                   <i><time datetime="2016-02-19">19th of February 2016</time></i>
                 </div>
               </a>
-              <p>First ever role=drinks 🎉</p>
+              <p>First ever role=drinks <span role="img" aria-label="Party confetti">🎉</span></p>
             </li>
           </ol>
         </div>
@@ -268,15 +268,5 @@
         </g>
       </defs>
     </svg>
-
-    <script>
-      (function () {
-        var alert = document.getElementsByClassName('😭')[0];
-        setTimeout(function () {
-          //alert.setAttribute('role', 'alert');
-          alert.innerHTML = alert.innerHTML + ' ';
-        }, 1000);
-      })();
-    </script>
   </body>
 </html>
