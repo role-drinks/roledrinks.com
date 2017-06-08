@@ -234,8 +234,11 @@ section .👥 li > a[href]:hover {
   margin-top: .5em;
 }
 
-.👥 a[href] span {
+.👥 span {
   display: block;
+}
+
+.👥 a[href] span {
   text-decoration: underline;
 }
 
