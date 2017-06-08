@@ -21,8 +21,8 @@ a {
   color: inherit;
 }
 
-a:focus,
-a:hover {
+a[href]:focus,
+a[href]:hover {
   color: hsl(334, 100%, 45%);
 }
 
@@ -120,15 +120,15 @@ nav li + li {
   border-left: .1em solid rgba(50, 50, 50, .2);
 }
 
-nav a {
+nav a[href] {
   display: block;
   padding: 1em .5em;
   width: 100%;
   text-decoration: none;
 }
 
-nav a:focus,
-nav a:hover {
+nav a[href]:focus,
+nav a[href]:hover {
   outline: none;
   color: hsl(334, 100%, 43%);
   background: rgba(255, 255, 255, 0.5);
@@ -167,8 +167,8 @@ main section:nth-of-type(even) a {
   color: inherit;
 }
 
-main section:nth-of-type(even) a:focus,
-main section:nth-of-type(even) a:hover {
+main section:nth-of-type(even) a[href]:focus,
+main section:nth-of-type(even) a[href]:hover {
   border-radius: .1em;
   color: hsl(334, 100%, 43%);
   background: hsl(217, 55%, 96%);
@@ -204,8 +204,8 @@ main section:nth-of-type(even) a:hover {
   text-decoration: none;
 }
 
-section .👥 li > a:focus, /* Cascade 💖 */
-section .👥 li > a:hover {
+section .👥 li > a[href]:focus, /* Cascade 💖 */
+section .👥 li > a[href]:hover {
   border-radius: .3em;
   color: hsl(217, 55%, 48%);
   background: #fff;
@@ -224,8 +224,7 @@ section .👥 li > a:hover {
   margin-top: .5em;
 }
 
-.👥 a span,
-.👥 div span {
+.👥 a[href] span {
   display: block;
   text-decoration: underline;
 }
