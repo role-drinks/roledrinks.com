@@ -234,7 +234,7 @@ section .👥 li > a[href]:hover {
   margin-top: .5em;
 }
 
-.👥 span {
+.👥 span:not([role="img"]) {
   display: block;
 }
 
