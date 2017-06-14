@@ -197,7 +197,7 @@ main section:nth-of-type(even) a[href]:hover {
   counter-increment: attendees;
 }
 
-.👥:not(.📢)::after {
+.👥:not(.📢)::after { /* Display number of attendees */
   display: none;
   content: counter(attendees) " attendees";
 }
