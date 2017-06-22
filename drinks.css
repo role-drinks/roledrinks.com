@@ -77,6 +77,10 @@ h1 {
   text-align: center;
 }
 
+h1 a {
+  text-decoration: none;
+}
+
 h1 + p {
   margin: 0 0 1em;
   color: hsl(274, 100%, 49%);
@@ -89,7 +93,7 @@ h1 + p {
   fill: hsl(217, 65%, 57%);
 }
 
-header :not(h1) > .♿️ {
+header .✨ > .♿️:last-child {
   display: none;
 }
 
