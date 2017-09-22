@@ -283,8 +283,10 @@ section .👥 li > a[href]:hover {
 }
 
 .💰 img {
+  width: 100%;
   max-width: 100%;
   max-height: 90px;
+  object-fit: contain;
 }
 
 /* override earlier wide-range selector */
