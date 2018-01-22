@@ -338,7 +338,6 @@ section .people li > a[href]:hover {
 /* Figures */
 figure {
     margin: 1.5em 0 0 0;
-    padding: 0;
 }
 
 figcaption {
