@@ -41,6 +41,10 @@ img + img {
   margin-top: 1em;
 }
 
+[hidden] {
+    display: none;
+}
+
 /* Skip link */
 body > a[href="#main"] {
   position: absolute;
